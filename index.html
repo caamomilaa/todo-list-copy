@@ -3,10 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon-32x32.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Document</title>
   </head>
   <body>
+    <header class="todo-header">
+      <h1 class="title">TODO</h1>
+      <a href="#">
+        <img class="moon-icon" src="./assets/images/icon-moon.svg" alt="" />
+      </a>
+    </header>
+    <main>
+      <div class="todo-container">
+        <div class="circle"></div>
+        <form id="form">
+          <input
+            class="todo-input"
+            id="todo-input"
+            type="text"
+            placeholder="Create a new todo..."
+          />
+        </form>
+      </div>
+      <div class="list-container">
+        <div class="task">
+          <input class="checkbox" id="checkbox" type="checkbox" />
+          <label for="checkbox" id="label" class="label text"
+            >Make a todo app</label
+          >
+          <button class="cross-button" id="cross-button">
+            <img src="./assets/images/icon-cross.svg" alt="" />
+          </button>
+        </div>
+      </div>
+      <section class="list-section">
+        <div class="items-container">
+          <span class="text" id="items-left">1</span>
+          <p class="text">items left</p>
+        </div>
+        <div class="list-filters">
+          <span class="text" id="remove-completed">Remove Completed</span>
+        </div>
+      </section>
+      <div class="filters">
+        <span class="text" id="all">All</span>
+        <span class="text" id="active">Active</span>
+        <span class="text" id="completed">Completed</span>
+      </div>
+    </main>
     <script src="./js/scripts.js"></script>
   </body>
 </html>
